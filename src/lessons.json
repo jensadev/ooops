@@ -102,7 +102,7 @@
       "title": "Grundläggande om klasser och objekt",
       "content": [
         {
-          "title": "Teori, klasser och objekt",
+          "title": "Teori",
           "purpose": [
             "Förstå grunderna i klasser och objekt.",
             "Kunna skilja mellan olika delar av en klass."
@@ -118,12 +118,12 @@
             "Inom klasser har vi egenskaper (variabler) och metoder (funktioner). Egenskaper beskriver tillståndet av objektet, medan metoder utför åtgärder på objektet."
           ],
           "illustration": {
-            "url": "./images/depositphotos_543641630-stock-illustration-object-oriented-programming-or-oop.jpg",
+            "url": "/ooops/images/depositphotos_543641630-stock-illustration-object-oriented-programming-or-oop.jpg",
             "alt": "Illustration av en hund klass."
           }
         },
         {
-          "title": "Praktik, använda klasser och objekt",
+          "title": "Praktik",
           "purpose": [
             " Tillämpa teoretiska kunskaper genom praktisk kodning.",
             "Kunna skapa och använda en grundläggande klass och objekt."
@@ -132,8 +132,8 @@
             "Skapa en enkel klass."
           ],
           "explanation": [
-            "Er uppgift är att skapa egna klasser och objekt. Använd er kreativitet och skapa något relaterat till er vardag eller intressen. Om ni tycker det är svårt att komma på en klass kan ni utgå från ett objekt.",
-            "Använd er av https://draw.io för att skapa ett klassdiagram."
+            "Din uppgift är att skapa en klass och ett objekt från denna. Utgå från något i din vardag eller ett intresse. Om du tycker det är svårt att komma på en klass, börja med ett objekt.",
+            "Använd dig av https://draw.io för att skapa ett klassdiagram."
           ]
         }
       ],
@@ -187,7 +187,7 @@
       ],
       "exercise": {
         "title": "Skapa klass och objekt i kod",
-        "material": "Ert klassdiagram från draw.io, en IDE och valfritt programmeringsspråk",
+        "material": "Klassdiagramet, en IDE och valfritt programmeringsspråk",
         "description": "Koda den klass du skapade i det praktiska momentet. Implementera en konstruktor som tar emot värden för dessa egenskaper vid skapandet av ett nytt objekt. Ditt objekt bör minst ha tre egenskaper och två metoder. Skapa sedan två olika instanser av klassen med olika egenskaper. Anropa metoderna på instanserna av klassen.",
         "instructions": "Presentera eran lösning. Diskutera."
       }
