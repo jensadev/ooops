@@ -16,7 +16,7 @@
             "Ett exempel på en klass kan vara en hund, från hunden kan vi skapat ett objekt. Objektet är en specifik hund som har egenskaper som färg, storlek, namn och ålder. Objektet kan också utföra åtgärder som att skälla, sitta, ligga och springa."
           ],
           "illustration": {
-            "url": "/images/depositphotos_543641630-stock-illustration-object-oriented-programming-or-oop.jpg",
+            "url": "./images/depositphotos_543641630-stock-illustration-object-oriented-programming-or-oop.jpg",
             "alt": "Bild på objektorienterad programmering"
           },
           "exercise": {
