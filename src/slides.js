@@ -1,8 +1,8 @@
 import json from './lessons.json'
 
 export function run(element) {
-  console.log(json)
-  console.log(element)
+  const d = new Date()
+  let year = d.getFullYear()
   const numberOfLessons = json.lessons.length
   let currentLesson = 0
   let numberOfSlides = json.lessons[currentLesson].content.length
@@ -81,7 +81,7 @@ export function run(element) {
             }
           </div>
         </article>
-        <footer class="container region">
+        <nav class="container region">
           <div class="controls">
             <button id="prevLesson" ${
               hasPrevLesson ? '' : 'disabled'
@@ -97,6 +97,9 @@ export function run(element) {
               hasNextLesson ? '' : 'disabled'
             }><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M383-480 200-664l56-56 240 240-240 240-56-56 183-184Zm264 0L464-664l56-56 240 240-240 240-56-56 183-184Z"/></svg></button>
           </div>
+        </nav>
+        <footer class="container region flow">
+          <p>Skapat av <a href="https://jensa.dev/" target="_blank">Jens Andreasson</a> &copy; ${year}. Koden finns på <a href="https://github.com/jensadev/ooops" target="_blank" noreferer>GitHub</a>.</p>
         </footer>
         <div id="questionsModal" class="modal">
           <div class="modal-content">
