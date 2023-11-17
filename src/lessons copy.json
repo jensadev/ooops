@@ -21,7 +21,8 @@
           },
           "exercise": {
             "title": "Övning",
-            "description": "Skriv ner 2 objekt som du kan se. För varje objekt, skriv ner minst 3 egenskaper och 3 åtgärder som objektet kan utföra."
+            "description": "Skriv ner 2 objekt som du kan se. För varje objekt, skriv ner minst 3 egenskaper och 3 åtgärder som objektet kan utföra.",
+            "notes": "Visa för varandra och diskutera."
           }
         },
         {
@@ -37,7 +38,8 @@
           ],
           "exercise": {
             "title": "Övning",
-            "description": "Fundera över hur du skulle kunna dela upp ett program i mindre delar. Försök att motivera dina resonemang. Hur, vad, varför?"
+            "description": "Fundera över hur du skulle kunna dela upp ett program du har kodat i mindre delar. Försök att motivera dina resonemang. Hur, vad, varför?",
+            "notes": "Arbeta i par. Visa för varandra och diskutera."
           }
         },
         {
@@ -50,7 +52,8 @@
           ],
           "explanation": [
             "I objektorienterad programmering finns det några grundläggande begrepp som är viktiga att känna till. Dessa begrepp är klass, objekt, egenskap och metod.",
-            "En klass är en beskrivning av ett objekt. En klass beskriver vilka egenskaper och metoder ett objekt har. Ett objekt är en instans av en klass. Ett objekt är något som skapas utifrån en klass. En egenskap är data som tillhör ett objekt. T.ex. färg, storlek, namn. En metod är en funktion som kan utföras av ett objekt."
+            "En klass är en beskrivning av ett objekt. En klass beskriver vilka egenskaper och metoder ett objekt har. Ett objekt är en instans av en klass. Ett objekt är något som skapas utifrån en klass. En egenskap är data som tillhör ett objekt. T.ex. färg, storlek, namn. En metod är en funktion som kan utföras av ett objekt.",
+            "Som exempel kan en klass för en person beskriva egenskaper som namn, ålder och kön, och att en metod för en person kan beskriva hur man går eller pratar."
           ],
           "illustration": {
             "url": "https://www.codebean.se/wp-content/uploads/2020/10/Kapitel-7_-Klass-och-Objekt-Copy-of-Klasser.svg",
@@ -58,7 +61,8 @@
           },
           "exercise": {
             "title": "Övning",
-            "description": "Skapa en klass för en person. Vilka egenskaper och metoder har en person? Skapa ett objekt av klassen person. Vad är det för person? Vad heter personen? Hur gammal är personen? Vad kan personen göra?"
+            "description": "Skapa en klass för en pryl du använder dagligen. Förklara vilka egenskaper och metoder som prylens klass har. Skapa sedan ett objekt av klassen. Förklara vilka egenskaper och metoder som objektet har.",
+            "notes": "Presentera din lösning för en klasskamrat. Diskutera."
           }
         }
       ],
@@ -109,9 +113,15 @@
       "content": [
         {
           "title": "Skapa klasser",
-          "points": [],
+          "points": [
+            "Vad är en klass",
+            "Egenskaper",
+            "Metoder",
+            "Konstruktor"
+          ],
           "explanation": [
-            ""
+            "Klasser är som ritningar eller mallar för att skapa objekt. Objekt är instanser av dessa klasser, verkliga föremål eller instanser av något i programmet.",
+            "Klasser hjälper oss att strukturera och organisera vår kod. Objekt låter oss arbeta med konkreta enheter inom programmet."
           ],
           "illustration": {
             "url": "",

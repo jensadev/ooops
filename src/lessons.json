@@ -1,0 +1,278 @@
+{
+  "purpose": "Du ska få en grundläggande förståelse för objektorientering, vad det är, varför det används och hur. Du ska också få en grundläggande förståelse för klasser och objekt. Efter lektionen ska du kunna förklara vad objektorienterad programmering är.",
+  "lessons": [
+    {
+      "title": "Introduktion till objektorienterad programmering",
+      "content": [
+        {
+          "title": "Vad är objektorienterad programmering?",
+          "purpose": [
+            "Förstå grunderna i vad objektorientering innebär.",
+            "Kunna skilja mellan objektorientering och andra paradigmer."
+          ],
+          "points": [
+            "Definition av objektorientering",
+            "Jämförelse med andra programmeringsparadigmer"
+          ],
+          "explanation": [
+            "Objektorientering är en programmeringsmetod där programmet struktureras runt objekt, som kan innehålla data i form av egenskaper och funktioner i form av metoder.",
+            "Till skillnad från andra sätt att programmera, där vi kanske bara tänker i termer av sekvenser av instruktioner, fokuserar objektorientering på att organisera koden kring objekt som representerar verkliga eller abstrakta enheter."
+          ]
+        },
+        {
+          "title": "Varför används objektorientering?",
+          "purpose": [
+            "Förstå varför objektorientering är användbart.",
+            "Relatera teori till praktik."
+          ],
+          "points": [
+            "Fördelar med objektorientering",
+            "Praktiska exempel på användning"
+          ],
+          "explanation": [
+            "Objektorientering gör koden mer läsbar, återanvändbar och underlättar samarbete. Det hjälper oss att hantera och strukturera större projekt.",
+            "Tänk på objektorientering som att organisera ditt kök. Varje köksredskap (objekt) har sina egna egenskaper (storlek, form) och metoder (användning). På så sätt blir köket mer organiserat och enklare att använda."
+          ]
+        },
+        {
+          "title": "Grunderna i objektorienterad programmering",
+          "purpose": [
+            "Få en grundläggande förståelse för viktiga begrepp inom objektorientering.",
+            "Känna till grunderna i klasser och objekt."
+          ],
+          "points": [
+            "Klasser, objekt, egenskaper och metoder.",
+            "Inkapsling, arv och polymorfism."
+          ],
+          "explanation": [
+            "Klasser är som ritningar för att skapa objekt. Objekt är instanser av dessa klasser. Objekt är verkliga föremål eller instanser av något i programmet.",
+            "Inkapsling handlar om att skydda data. Arv handlar om att en klass kan ärva egenskaper från en annan. Polymorfism låter oss använda objekt på olika sätt.",
+            "En klass är en beskrivning av ett objekt. En klass beskriver vilka egenskaper och metoder ett objekt har. Ett objekt är en instans av en klass. Ett objekt är något som skapas utifrån en klass. En egenskap är data som tillhör ett objekt. T.ex. färg, storlek, namn. En metod är en funktion som kan utföras av ett objekt."
+          ]
+        }
+      ],
+      "keywords": [
+        {
+          "word": "Objektorienterad programmering",
+          "description": "Objektorientering är en programmeringsmetod där programmet struktureras runt objekt."
+        },
+        {
+          "word": "klasser",
+          "description": "Klasser är som ritningar för att skapa objekt."
+        },
+        {
+          "word": "objekt",
+          "description": "Objekt är instanser av dessa klasser. Objekt är verkliga föremål eller instanser av något i programmet."
+        },
+        {
+          "word": "inkapsling",
+          "description": "Inkapsling är att skydda data."
+        },
+        {
+          "word": "arv",
+          "description": "Med arv kan en klass ärva egenskaper från en annan."
+        },
+        {
+          "word": "polymorfism",
+          "description": "Polymorfism betyder många former. Med polymorfism kan vi använda objekt på olika sätt."
+        }
+      ],
+      "questions": [
+        {
+          "question": "Vad är objektorienterad programmering?",
+          "answer": "Objektorienterad programmering är en programmeringsmetod som fokuserar på objekt."
+        },
+        {
+          "question": "Vad är skillnaden mellan en klass och ett objekt?",
+          "answer": "Klassen är en ritning, objektet är en instans av ritningen."
+        },
+        {
+          "question": "Varför används objektorientering? Ge minst två fördelar.",
+          "answer": "För att göra koden mer läsbar, återanvändbar och underlätta samarbete."
+        }
+      ],
+      "exercise": {
+        "title": "En objektorienterad historia",
+        "material": "Penna och papper",
+        "description": "Arbeta i par för att skapa en kort historia eller scen med minst två objekt(instanser av klasser). Beskriv era objekt och hur de interagerar med varandra. Använd minst tre begrepp från lektionen, såsom klasser, objekt, egenskaper eller metoder.",
+        "instructions": "Presentera eran lösning. Diskutera."
+      }
+    },
+    {
+      "title": "Grundläggande om klasser och objekt",
+      "content": [
+        {
+          "title": "Teori, klasser och objekt",
+          "purpose": [
+            "Förstå grunderna i klasser och objekt.",
+            "Kunna skilja mellan olika delar av en klass."
+          ],
+          "points": [
+            "Vad är klasser och objekt?",
+            "Hur används klasser och objekt?",
+            "Introduktion till egenskaper och metoder."
+          ],
+          "explanation": [
+            " Klasser är som ritningar eller mallar för att skapa objekt. Objekt är instanser av dessa klasser, verkliga föremål eller instanser av något i programmet.",
+            "Klasser hjälper oss att strukturera och organisera vår kod. Objekt låter oss arbeta med konkreta enheter inom programmet.",
+            "Inom klasser har vi egenskaper (variabler) och metoder (funktioner). Egenskaper beskriver tillståndet av objektet, medan metoder utför åtgärder på objektet."
+          ],
+          "illustration": {
+            "url": "./images/depositphotos_543641630-stock-illustration-object-oriented-programming-or-oop.jpg",
+            "alt": "Illustration av en hund klass."
+          }
+        },
+        {
+          "title": "Praktik, använda klasser och objekt",
+          "purpose": [
+            " Tillämpa teoretiska kunskaper genom praktisk kodning.",
+            "Kunna skapa och använda en grundläggande klass och objekt."
+          ],
+          "points": [
+            "Skapa en enkel klass."
+          ],
+          "explanation": [
+            "Er uppgift är att skapa egna klasser och objekt. Använd er kreativitet och skapa något relaterat till er vardag eller intressen. Om ni tycker det är svårt att komma på en klass kan ni utgå från ett objekt.",
+            "Använd er av https://draw.io för att skapa ett klassdiagram."
+          ]
+        }
+      ],
+      "keywords": [
+        {
+          "word": "klass",
+          "description": "En klass är en ritning för att skapa objekt."
+        },
+        {
+          "word": "objekt",
+          "description": "Med objekt menas en instans av en klass."
+        },
+        {
+          "word": "instans",
+          "description": "En instans är ett objekt av en klass."
+        },
+        {
+          "word": "medlemmar",
+          "description": "Medlemmar används för att beskriva egenskaper och metoder i en klass."
+        },
+        {
+          "word": "konstruktor",
+          "description": "En konstruktor är en speciell metod som ofta heter samma sak som klassen. Den körs automatiskt när ett objekt skapas för att initialisera objektets egenskaper."
+        },
+        {
+          "word": "instansiering",
+          "description": "Med instansiering menas att skapa ett objekt av en klass."
+        }
+      ],
+      "questions": [
+        {
+          "question": "Vad är en klass?",
+          "answer": "En klass är en ritning för att skapa objekt."
+        },
+        {
+          "question": "Vad är ett objekt?",
+          "answer": "Ett objekt är en instans av en klass."
+        },
+        {
+          "question": "Vad kallas variabler i en klass?",
+          "answer": "Egenskaper."
+        },
+        {
+          "question": "Vad är syftet med en konstruktor?",
+          "answer": "Att initialisera egenskaper när ett objekt skapas."
+        },
+        {
+          "question": "Hur skiljer sig en metod från en egenskap i en klass?",
+          "answer": "En metod utför en åtgärd, medan en egenskap beskriver tillstånd."
+        }
+      ],
+      "exercise": {
+        "title": "Skapa klass och objekt i kod",
+        "material": "Ert klassdiagram från draw.io, en IDE och valfritt programmeringsspråk",
+        "description": "Koda den klass du skapade i det praktiska momentet. Implementera en konstruktor som tar emot värden för dessa egenskaper vid skapandet av ett nytt objekt. Ditt objekt bör minst ha tre egenskaper och två metoder. Skapa sedan två olika instanser av klassen med olika egenskaper. Anropa metoderna på instanserna av klassen.",
+        "instructions": "Presentera eran lösning. Diskutera."
+      }
+    },
+    {
+      "title": "Inkapsling och Åtkomstmetoder",
+      "content": [
+        {
+          "title": "",
+          "purpose": [
+            ""
+          ],
+          "points": [
+            ""
+          ],
+          "explanation": [
+            ""
+          ]
+        }
+      ],
+      "keywords": [
+        {
+          "word": "inkapsling",
+          "description": "Med inkapsling menas att skydda data."
+        },
+        {
+          "word": "åtkomstmetoder",
+          "description": "Detta är metoder för att komma åt och ändra egenskaper. Vanligt kallade getters och setters."
+        },
+        {
+          "word": "privat",
+          "description": "En privat egenskap kan bara nås inom klassen."
+        },
+        {
+          "word": "publika",
+          "description": "En publik egenskap kan nås utanför klassen."
+        },
+        {
+          "word": "skyddad",
+          "description": "Skyddad betyder att egenskapen kan nås inom klassen och i subklasser."
+        }
+      ],
+      "questions": [],
+      "exercise": {}
+    },
+    {
+      "title": "Arv och Polymorfism",
+      "content": [
+        {
+          "title": "",
+          "purpose": [
+            ""
+          ],
+          "points": [
+            ""
+          ],
+          "explanation": [
+            ""
+          ]
+        }
+      ],
+      "keywords": [
+        {
+          "word": "arv",
+          "description": "Med arv kan en klass ärva egenskaper från en annan."
+        },
+        {
+          "word": "subklass",
+          "description": "En subklass ärver egenskaper från en superklass."
+        },
+        {
+          "word": "superklass",
+          "description": "En superklass ärver egenskaper till en subklass."
+        },
+        {
+          "word": "polymorfism",
+          "description": "Polymorfism betyder många former. Med polymorfism kan vi använda objekt på olika sätt."
+        },
+        {
+          "word": "överlagring",
+          "description": "Med överlagring menas att en metod kan ha flera olika signaturer. Detta gör att vi kan använda metoden på olika sätt."
+        }
+      ],
+      "questions": [],
+      "exercise": {}
+    }
+  ]
+}

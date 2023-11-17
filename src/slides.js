@@ -1,38 +1,36 @@
-import json from './slides.json'
+import json from './lessons.json'
 
 export function run(element) {
   console.log(json)
   console.log(element)
   const numberOfLessons = json.lessons.length
   let currentLesson = 0
-
-  const slideElement = document.querySelector('#slide')
+  let numberOfSlides = json.lessons[currentLesson].content.length
+  let currentSlide = 0
+  // const slideElement = document.querySelector('#slide')
 
   const nextLesson = () => {
     currentLesson = (currentLesson + 1) % numberOfLessons
+    currentSlide = 0
+    numberOfSlides = json.lessons[currentLesson].content.length
     render()
-    slideElement.scrollIntoView()
   }
 
   const previousLesson = () => {
     currentLesson = (currentLesson - 1 + numberOfLessons) % numberOfLessons
+    currentSlide = 0
+    numberOfSlides = json.lessons[currentLesson].content.length
     render()
-    slideElement.scrollIntoView()
   }
-
-  const numberOfSlides = json.lessons[currentLesson].content.length
-  let currentSlide = 0
 
   const nextSlide = () => {
     currentSlide = (currentSlide + 1) % numberOfSlides
     render()
-    slideElement.scrollIntoView()
   }
 
   const previousSlide = () => {
     currentSlide = (currentSlide - 1 + numberOfSlides) % numberOfSlides
     render()
-    slideElement.scrollIntoView()
   }
 
   const render = () => {
@@ -48,18 +46,21 @@ export function run(element) {
       <main class="flow">
         <header class="container region flow">
           <h1>${lesson.title}</h1>
-          <p>${lesson.purpose}</p>
-          <h2>Begrepp</h2>
-          <ul class="keywords">
+          <ul class="keywords" role="list">
             ${lesson.keywords
               .map(
-                (keyword) => `<li>${keyword.word} : ${keyword.description}</li>`
+                (keyword) =>
+                  `<li>
+                  <details><summary>${keyword.word}</summary>${keyword.description}</details></li>`
               )
               .join('')}
           </ul>
         </header>
         <article id="slide" class="flow">
           <h2 class="container">${slide.title}</h2>
+          <ul class="container sub" role="list">
+            ${slide.purpose.map((p) => `<li>${p}</li>`).join('')}
+          </ul>
           <div class="container inner flow">
             <ul class="points">
               ${slide.points.map((point) => `<li>${point}</li>`).join('')}
@@ -98,8 +99,10 @@ export function run(element) {
           </div>
         </footer>
         <div id="questionsModal" class="modal">
-          <div class="modal-content region container">
+          <div class="modal-content">
             <span id="close">&times;</span>
+            <div class="content region flow">
+            <h2>Frågor</h2>
             <ul class="questions flow" role="list">
             ${lesson.questions
               .map(
@@ -110,9 +113,18 @@ export function run(element) {
               .join('')}
           </ul>
           </div>
+          <div class="content region flow">
+          <h2>Övningsuppgift</h2>
+            <h3>${lesson.exercise.title}</h3>
+            <h4>Material: ${lesson.exercise.material}</h4>
+            <p>${lesson.exercise.description}</p>
+            <p>${lesson.exercise.instructions}</p>
+          </div>
         </div>
       </main>
     `
+
+    document.querySelector('#slide').scrollIntoView()
 
     document.getElementById('questions').addEventListener('click', function () {
       document.getElementById('questionsModal').style.display = 'block'
