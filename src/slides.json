@@ -1,0 +1,182 @@
+{
+  "lessons": [
+    {
+      "title": "Introduktion till objektorienterad programmering",
+      "purpose": "Du ska få en grundläggande förståelse för objektorienterade koncept, vad de är, varför de används och hur. Du ska också få en grundläggande förståelse för klasser och objekt. Efter lektionen ska du kunna förklara vad objektorienterad programmering är.",
+      "content": [
+        {
+          "title": "Vad är objektorienterad programmering?",
+          "points": [
+            "En programeringsmetod som fokuserar på objekt",
+            "Objekt är saker som har egenskaper och kan utföra åtgärder",
+            "Objektorienterad programmering gör det lättare att skapa komplexa program"
+          ],
+          "explanation": [
+            "Objektorienterad programmering fokuserar på objekt. Objekt är saker som har egenskaper och kan utföra åtgärder.",
+            "Ett exempel på en klass kan vara en hund, från hunden kan vi skapat ett objekt. Objektet är en specifik hund som har egenskaper som färg, storlek, namn och ålder. Objektet kan också utföra åtgärder som att skälla, sitta, ligga och springa."
+          ],
+          "illustration": {
+            "url": "/images/depositphotos_543641630-stock-illustration-object-oriented-programming-or-oop.jpg",
+            "alt": "Bild på objektorienterad programmering"
+          },
+          "exercise": {
+            "title": "Övning",
+            "description": "Skriv ner 2 objekt som du kan se. För varje objekt, skriv ner minst 3 egenskaper och 3 åtgärder som objektet kan utföra."
+          }
+        },
+        {
+          "title": "Fördelar med objektorienterad programmering",
+          "points": [
+            "Gör det lättare att skapa komplexa program",
+            "Gör det lättare att underhålla och ändra program",
+            "Gör det lättare att dela upp program i mindre delar"
+          ],
+          "explanation": [
+            "Fördelarna med objektorienterad programmering är att det kan göra det lättare att skapa komplexa program. Det ska även underlätta att underhålla och ändra program samt att skapa förutsättningar för att dela upp program i mindre delar.",
+            "Att kunna dela upp ett program i mindre delar är en förutsättning för att kunna arbeta tillsammans med andra programmerare för att skapa komplexa program."
+          ],
+          "exercise": {
+            "title": "Övning",
+            "description": "Fundera över hur du skulle kunna dela upp ett program i mindre delar. Försök att motivera dina resonemang. Hur, vad, varför?"
+          }
+        },
+        {
+          "title": "Grundläggande begrepp i objektorienterad programmering",
+          "points": [
+            "Klass",
+            "Objekt",
+            "Egenskap",
+            "Metod"
+          ],
+          "explanation": [
+            "I objektorienterad programmering finns det några grundläggande begrepp som är viktiga att känna till. Dessa begrepp är klass, objekt, egenskap och metod.",
+            "En klass är en beskrivning av ett objekt. En klass beskriver vilka egenskaper och metoder ett objekt har. Ett objekt är en instans av en klass. Ett objekt är något som skapas utifrån en klass. En egenskap är data som tillhör ett objekt. T.ex. färg, storlek, namn. En metod är en funktion som kan utföras av ett objekt."
+          ],
+          "illustration": {
+            "url": "https://www.codebean.se/wp-content/uploads/2020/10/Kapitel-7_-Klass-och-Objekt-Copy-of-Klasser.svg",
+            "alt": "Extern bild på klasser och objekt"
+          },
+          "exercise": {
+            "title": "Övning",
+            "description": "Skapa en klass för en person. Vilka egenskaper och metoder har en person? Skapa ett objekt av klassen person. Vad är det för person? Vad heter personen? Hur gammal är personen? Vad kan personen göra?"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "word": "klass",
+          "description": "En beskrivning av ett objekt"
+        },
+        {
+          "word": "objekt",
+          "description": "Ett objekt är något som skapas utifrån en klass, en instans av en klass"
+        },
+        {
+          "word": "egenskap",
+          "description": "Data som tillhör ett objekt, t.ex. färg, storlek, namn (variabler)"
+        },
+        {
+          "word": "metod",
+          "description": "En funktion som kan utföras av ett objekt"
+        }
+      ],
+      "questions": [
+        {
+          "question": "Vad är objektorienterad programmering?",
+          "answer": "Objektorienterad programmering är en programeringsmetod som fokuserar på objekt. Objekt är saker som har egenskaper och kan utföra åtgärder."
+        },
+        {
+          "question": "Vad är en klass?",
+          "answer": "En klass är en beskrivning av ett objekt. En klass beskriver vilka egenskaper och metoder ett objekt har."
+        },
+        {
+          "question": "Vad är ett objekt?",
+          "answer": "Ett objekt är en instans av en klass. Ett objekt är något som skapas utifrån en klass."
+        },
+        {
+          "question": "Vad är en egenskap?",
+          "answer": "En egenskap är data som tillhör ett objekt. T.ex. färg, storlek, namn."
+        },
+        {
+          "question": "Vad är en metod?",
+          "answer": "En metod är en funktion som kan utföras av ett objekt."
+        }
+      ]
+    },
+    {
+      "title": "Grundläggande om klasser och objekt",
+      "purpose": "",
+      "content": [
+        {
+          "title": "Skapa klasser",
+          "points": [],
+          "explanation": [
+            ""
+          ],
+          "illustration": {
+            "url": "",
+            "alt": ""
+          }
+        },
+        {
+          "title": "Skapa objekt",
+          "points": [],
+          "explanation": [
+            ""
+          ]
+        },
+        {
+          "title": "Använda objekt",
+          "points": [],
+          "explanation": [
+            ""
+          ]
+        }
+      ],
+      "keywords": [
+        {
+          "keyword": "instans",
+          "description": "Ett objekt är en instans av en klass"
+        },
+        {
+          "keyword": "konstruktor",
+          "description": "En metod som körs när ett objekt skapas"
+        },
+        {
+          "keyword": "nyckelordet new",
+          "description": "Används för att skapa ett nytt objekt"
+        },
+        {
+          "keyword": "nyckelordet this",
+          "description": "Används för att referera till det egna objektet, alltså till sig själv"
+        },
+        {
+          "keyword": "referens",
+          "description": "En referens till ett objekt"
+        }
+      ],
+      "questions": [
+        {
+          "question": "Vad är en instans?",
+          "answer": "En instans är ett objekt. Ett objekt är en instans av en klass."
+        },
+        {
+          "question": "Vad är en konstruktor?",
+          "answer": "En konstruktor är en metod som körs när ett objekt skapas."
+        },
+        {
+          "question": "Vad är nyckelordet new?",
+          "answer": "Nyckelordet new används för att skapa ett nytt objekt."
+        },
+        {
+          "question": "Vad är nyckelordet this?",
+          "answer": "Nyckelordet this används för att referera till det egna objektet, alltså till sig själv."
+        },
+        {
+          "question": "Vad är en referens?",
+          "answer": "En referens är en referens till ett objekt. En referens är en variabel som innehåller en referens till ett objekt."
+        }
+      ]
+    }
+  ]
+}
