@@ -113,7 +113,7 @@
             "Introduktion till egenskaper och metoder."
           ],
           "explanation": [
-            " Klasser är som ritningar eller mallar för att skapa objekt. Objekt är instanser av dessa klasser, verkliga föremål eller instanser av något i programmet.",
+            "Klasser är som ritningar eller mallar för att skapa objekt. Objekt är instanser av dessa klasser, verkliga föremål eller instanser av något i programmet.",
             "Klasser hjälper oss att strukturera och organisera vår kod. Objekt låter oss arbeta med konkreta enheter inom programmet.",
             "Inom klasser har vi egenskaper (variabler) och metoder (funktioner). Egenskaper beskriver tillståndet av objektet, medan metoder utför åtgärder på objektet."
           ],
@@ -193,18 +193,57 @@
       }
     },
     {
-      "title": "Inkapsling och Åtkomstmetoder",
+      "title": "Inkapsling",
       "content": [
         {
-          "title": "",
+          "title": "Vad är inkapsling?",
           "purpose": [
-            ""
+            "Förstå begreppet inkapsling och dess betydelse.",
+            "Kunna identifiera situationer där inkapsling är fördelaktigt."
           ],
           "points": [
-            ""
+            "Definition av inkapsling.",
+            "Varför det är viktigt i objektorienterad programmering"
           ],
           "explanation": [
-            ""
+            "Inkapsling är en av de fyra grundläggande koncepten inom objektorienterad programmering (OOP). Det innebär att du grupperar data och metoder som manipulerar den data som du samlat i en klass. Klassen fungerar som en slags behållare som skyddar och hanterar åtkomst till dess data.",
+            "Genom inkapsling kan du begränsa åtkomsten till viss data eller delar av koden. Detta innebär att viss information kan hållas privat och skyddas från oönskad manipulation eller åtkomst från andra delar av programmet.",
+            "Användande och underhåll, klassen presenterar ett gränssnitt för att arbeta med objektet. Så länge gränssnittet inte ändras, kan du ändra hur objektet fungerar internt utan att påverka andra delar av programmet."
+          ]
+        },
+        {
+          "title": "Private, public och protected",
+          "purpose": [
+            "Förstå begreppen och dess användningsområden.",
+            "Kunna implementera inkapsling med hjälp av åtkomstegenskaperna."
+          ],
+          "points": [
+            "Private",
+            "Public",
+            "Protected"
+          ],
+          "explanation": [
+            "För att styra hur egenskaper och metoder kan nås från andra delar av programmet, kan vi använda oss av åtkomstegenskaper. Dessa är private, public och protected.",
+            "Med private kan vi begränsa åtkomsten till en egenskap eller metod till klassen där den är deklarerad. Detta innebär att egenskapen eller metoden inte kan nås från andra delar av programmet.",
+            "Med public kan vi tillåta åtkomst till egenskapen eller metoden från andra delar av programmet.",
+            "Med protected kan vi begränsa åtkomsten till en egenskap eller metod till klassen där den är deklarerad och subklasser. Detta innebär att egenskapen eller metoden kan nås från andra delar av programmet, med viss begränsning."
+          ]
+        },
+        {
+          "title": "Vad är åtkomstmetoder?",
+          "purpose": [
+            "Förstå varför åtkomstmetoder behövs.",
+            "Kunna implementera inkapsling med hjälp av åtkomstmetoder."
+          ],
+          "points": [
+            "Vad är åtkomstmetoder?",
+            "Varför behövs åtkomstmetoder?"
+          ],
+          "explanation": [
+            "Åtkomstmetoder är metoder som används för att komma åt och ändra egenskaper. Vanligt kallade getters och setters.",
+            "Åtkomstmetoder används för att komma åt och ändra egenskaper. Detta är viktigt för att kunna implementera inkapsling. Genom att använda åtkomstmetoder kan vi begränsa åtkomsten till egenskaper och metoder.",
+            "Getters används för att hämta värden från egenskaper. Setters används för att ändra värden på egenskaper.",
+            "Getters och setters är vanligtvis publika, medan egenskaperna är privata."
           ]
         }
       ],
@@ -214,65 +253,187 @@
           "description": "Med inkapsling menas att skydda data."
         },
         {
-          "word": "åtkomstmetoder",
-          "description": "Detta är metoder för att komma åt och ändra egenskaper. Vanligt kallade getters och setters."
-        },
-        {
-          "word": "privat",
+          "word": "privat (private)",
           "description": "En privat egenskap kan bara nås inom klassen."
         },
         {
-          "word": "publika",
+          "word": "publik (public)",
           "description": "En publik egenskap kan nås utanför klassen."
         },
         {
-          "word": "skyddad",
+          "word": "skyddad (protected)",
           "description": "Skyddad betyder att egenskapen kan nås inom klassen och i subklasser."
+        },
+        {
+          "word": "åtkomstmetoder",
+          "description": "Detta är metoder för att komma åt och ändra egenskaper. Vanligt kallade getters och setters."
         }
       ],
-      "questions": [],
-      "exercise": {}
+      "questions": [
+        {
+          "question": "Vad är inkapsling?",
+          "answer": "Inkapsling är att skydda data."
+        },
+        {
+          "question": "Vad är skillnaden mellan private, public och protected?",
+          "answer": "Private kan bara nås inom klassen, public kan nås utanför klassen och protected kan nås inom klassen och i subklasser."
+        },
+        {
+          "question": "Vad är en åtkomstmetod?",
+          "answer": "En åtkomstmetod är en metod för att komma åt och ändra egenskaper. Vanligt kallade getters och setters."
+        }
+      ],
+      "exercise": {
+        "title": "Planera en klass",
+        "material": "Papper och penna, draw.io",
+        "description": "Skapa en klass som beskriver något i din vardag, dig själv eller ett intresse. Skapa ett klassdiagram som visar klassens egenskaper och metoder. Använd dig av åtkomstegenskaper för att implementera inkapsling.",
+        "instructions": "Presentera din lösning. Diskutera."
+      }
     },
     {
       "title": "Arv och Polymorfism",
       "content": [
         {
-          "title": "",
+          "title": "Vad är Arv?",
           "purpose": [
-            ""
+            "Definition av arv.",
+            "Fördelar med arv och varför det används."
           ],
           "points": [
-            ""
+            "Förstå grunderna i vad arv är och hur det används.",
+            "Kunna identifiera och förklara begrepp som förälderklass och härledd klass."
           ],
           "explanation": [
-            ""
+            "Arv används för att kunna återanvända kod. Det innebär att en klass kan ärva egenskaper och metoder från en annan klass. Den klass som ärver kallas för subklass eller härledd klass. Den klass som en subklass ärver från kallas för superklass eller förälderklass.",
+            "Arv används för att skapa en hierarki av klasser.",
+            "En subklass ärver alla egenskaper och metoder från sin superklass. Detta innebär att vi kan återanvända kod och skapa en hierarki av klasser."
+          ]
+        },
+        {
+          "title": "Vad är Polymorfism?",
+          "purpose": [
+            "Definition av polymorfism.",
+            "Fördelar med polymorfism och varför det används."
+          ],
+          "points": [
+            "Förstå grunderna i vad polymorfism är och hur det används.",
+            "Kunna identifiera och förklara begrepp som overloading och overriding. Olika former av överlagring."
+          ],
+          "explanation": [
+            "Polymorfism betyder många former. Med polymorfism kan vi använda objekt på olika sätt.",
+            "Polymorfism låter oss använda metoder på olika sätt. Vanligt är overloading (flera metoder med samma namn som accepterar olika parametrar) och overriding (att en klass som ärver modifierar metoden)."
           ]
         }
       ],
       "keywords": [
         {
           "word": "arv",
-          "description": "Med arv kan en klass ärva egenskaper från en annan."
+          "description": "Med arv kan en klass ärva egenskaper från en annan. Arv används för att kunna återanvända kod."
         },
         {
           "word": "subklass",
-          "description": "En subklass ärver egenskaper från en superklass."
+          "description": "En subklass ärver egenskaper från en superklass. En subklass kallas även för härledd klass."
         },
         {
           "word": "superklass",
-          "description": "En superklass ärver egenskaper till en subklass."
+          "description": "En superklass ärver egenskaper till en subklass. En superklass kallas även för förälderklass."
         },
         {
           "word": "polymorfism",
           "description": "Polymorfism betyder många former. Med polymorfism kan vi använda objekt på olika sätt."
         },
         {
-          "word": "överlagring",
-          "description": "Med överlagring menas att en metod kan ha flera olika signaturer. Detta gör att vi kan använda metoden på olika sätt."
+          "word": "overloading",
+          "description": "Med överlagring menas att en metod kan ta olika antal parametrar. Detta gör att vi kan använda metoden på olika sätt."
+        },
+        {
+          "word": "overriding",
+          "description": "Med overriding menas att en subklass modifierar en metod som den ärver från en superklass."
         }
       ],
-      "questions": [],
-      "exercise": {}
+      "questions": [
+        {
+          "question": "Vad är arv?",
+          "answer": "Arv är när en klass ärver egenskaper från en annan klass."
+        },
+        {
+          "question": "Ge exempel på en relation med superklass och subklass? Utgå från exempelvis djur.",
+          "answer": "En superklass kan vara djur och en subklass kan vara hund."
+        },
+        {
+          "question": "Ge exempel på när polymorfism kan användas?",
+          "answer": "Polymorfism kan användas när vi vill använda metoder på olika sätt."
+        },
+        {
+          "question": "Vad är skillnaden mellan overloading och overriding?",
+          "answer": "Overloading innebär att en metod kan ta olika antal parametrar. Overriding innebär att en subklass modifierar en metod som den ärver från en superklass."
+        }
+      ],
+      "exercise": {
+        "title": "Planera en superklass och subklass",
+        "material": "Papper och penna, draw.io",
+        "description": "Skapa en superklass och subklass som beskriver något i din vardag, dig själv eller ett intresse. Skapa ett klassdiagram som visar klassernas egenskaper och metoder. Använd dig av arv för att skapa en hierarki av klasser.",
+        "instructions": "Presentera din lösning. Diskutera."
+      }
+    },
+    {
+      "title": "Sammanfattning, fyra koncept",
+      "content": [
+        {
+          "title": "",
+          "purpose": [
+            "Vad, hur och varför."
+          ],
+          "points": [],
+          "explanation": []
+        }
+      ],
+      "keywords": [
+        {
+          "word": "Klasser och objekt",
+          "description": "Klass är en ritning som definierar attribut (egenskaper) och metoder (funktioner) för att skapa objekt. Objekt är en instans av en klass. Objektet är det faktiska som skapats från klassen."
+        },
+        {
+          "word": "Inkapsling",
+          "description": "Inkapsling är att gruppera attribut och metoder i en klass och begränsa åtkomsten till dessa. Det innebär att vissa delar av koden kan vara privata och endast nås inom klassen, medan andra kan vara publika och nås från andra delar av programmet."
+        },
+        {
+          "word": "Arv",
+          "description": "Arv är när vi låter en klass ärva egenskaper och metoder från en annan klass. Arv möjliggör återanvändning av kod och skapar en hierarki av klasser."
+        },
+        {
+          "word": "Polymorfism",
+          "description": "Polymorfism är möjligheten för objekt av olika klasser att svara på samma metodanrop på ett enhetligt sätt. Det låter oss att använda metoder på olika sätt. Vanligt är overloading (flera metoder med samma namn som accepterar olika parametrar) och overriding (att en klass som ärver modifierar metoden)."
+        }
+      ],
+      "questions": [
+        {
+          "question": "Vad är en klass?",
+          "answer": "Se materialet"
+        },
+        {
+          "question": "Vad är ett objekt?",
+          "answer": "Se materialet"
+        },
+        {
+          "question": "Förklara varför inkapsling är viktigt i objektorienterad programmering. Använd ett bankkonto som exempel.",
+          "answer": "Se materialet"
+        },
+        {
+          "question": "Visa hur du kan använda arv mellan två klasser.",
+          "answer": "Se materialet"
+        },
+        {
+          "question": "Ge exempel på en metod som använder polymorfism?",
+          "answer": "Se materialet"
+        }
+      ],
+      "exercise": {
+        "title": "Koda",
+        "material": "IDE",
+        "description": "Skapa ett program som visar på samtliga fyra koncept.",
+        "instructions": "Arbeta med programmet."
+      }
     }
   ]
 }
